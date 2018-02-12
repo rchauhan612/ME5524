@@ -1,0 +1,8 @@
+/.catkin_tools/profiles
+
+/build
+/devel
+/logs
+
+*.bak
+*.swp
