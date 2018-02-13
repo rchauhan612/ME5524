@@ -1,0 +1,11 @@
+<?xml version='1.0' ?>
+<launch>
+  <arg name='fcu_url' default='/dev/ttyTHS2:921600' />
+  <arg name='gcs_url' default='' />
+
+  <include file='$(find mbzirc_system)/launch/support/standard_loadout.launch'>
+    <arg name='name' value='bogey4' />
+    <arg name='fcu_url' value='$(arg fcu_url)' />
+    <arg name='gcs_url' value='$(arg gcs_url)' />
+  </include>
+</launch>

@@ -1,0 +1,16 @@
+<?xml version='1.0' ?>
+<launch>
+  <arg name='name' default='bogey' />
+  <arg name='fcu_url' default='/dev/ttyTHS2:921600' />
+  <arg name='gcs_url' default='' />
+
+  <group ns='$(arg name)'>
+    <!-- Launch MAVROS for PX4 firmware -->
+    <include file='$(find mavros)/launch/px4.launch'>
+      <arg name='fcu_url' value='$(arg fcu_url)' />
+      <arg name='gcs_url' value='$(arg gcs_url)' />
+    </include>
+    <!-- Launch offboard controller interface  -->
+    <include file='$(find offboard_control)/launch/offboard_control.launch' />
+  </group>
+</launch>

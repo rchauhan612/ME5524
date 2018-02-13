@@ -14,11 +14,11 @@ Here are some common workspace commands for updating and running the simulation 
 
 ### Run Simulation
 
-    roslaunch mbzirc_gazebo simulator.launch
+    roslaunch mbzirc_gazebo challenge1.launch
 
 ### Run System
 
-    roslaunch mbzirc_system bogey.launch
+    roslaunch mbzirc_system bogey0.launch
 
 ## Installation Instructions
 
@@ -56,20 +56,32 @@ Add this to your .bashrc file. **Note CATKIN_WS should be set to where you have 
 
 ### Takeoff
 
-    rosservice call /bogey/offboard_control/takeoff "{}"
+    rosservice call /bogey0/offboard_control/takeoff "{}"
 
 ### Land
 
-    rosservice call /bogey/offboard_control/land "{}"
+    rosservice call /bogey0/offboard_control/land "{}"
 
 ### Waypoint
 
-    rosservice call /bogey/offboard_control/waypoint "{ position: { x: 0.0, y: 0.0, z: 10.0 }, yaw: 0.0 }"
+    rosservice call /bogey0/offboard_control/waypoint "{ position: { x: 0.0, y: 0.0, z: 10.0 }, yaw: 0.0 }"
 
 ### Velocity
 
-    rosservice call /bogey/offboard_control/velocity "{ linear: { x: 0.0, y: 0.0, z: 0.0 }, yaw: 0.0 }"
+    rosservice call /bogey0/offboard_control/velocity "{ linear: { x: 0.0, y: 0.0, z: 0.0 }, yaw: 0.0 }"
 
 ### State
 
-    rostopic echo /bogey/offboard_control/state
+    rostopic echo /bogey0/offboard_control/state
+
+## Simulation Notes
+
+### Generate Bogey Models
+
+You can change the number of Bogeys that get generated in the script.
+
+    $CATKIN_WS/src/mbzirc_gazebo/scripts/generate_bogey_models.sh
+
+You may need to set the permissions for this script:
+
+    chmod +x $CATKIN_WS/src/mbzirc_gazebo/scripts/generate_bogey_models.sh

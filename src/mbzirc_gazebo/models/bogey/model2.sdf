@@ -1,6 +1,6 @@
 <?xml version='1.0' ?>
 <sdf version='1.6'>
-  <model name='bogey'>
+  <model name='bogey2'>
     <!-- Typhoon H body -->
     <pose>0 0 0.221 0 0 3.1415927</pose>
     <link name='base_link'>
@@ -396,7 +396,7 @@
         </camera>
         <always_on>1</always_on>
         <update_rate>10</update_rate>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <!-- how to make this work without using urdf?
         <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
           <alwaysOn>true</alwaysOn>
@@ -1327,7 +1327,7 @@
       <imuSubTopic>/imu</imuSubTopic>
       <gpsSubTopic>/gps</gpsSubTopic>
       <mavlink_addr>INADDR_ANY</mavlink_addr>
-      <mavlink_udp_port>14560</mavlink_udp_port>
+      <mavlink_udp_port>14760</mavlink_udp_port>
       <serialEnabled>false</serialEnabled>
       <serialDevice>/dev/ttyACM0</serialDevice>
       <baudRate>921600</baudRate>
