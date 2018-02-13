@@ -11,6 +11,7 @@
   <arg name='rcS' default='$(find mbzirc_gazebo)/models/bogey/config/px4_parameters' />
 
   <group ns='$(arg name)'>
+    <node name='px4' pkg='px4' type='px4' output='screen' args='$(find px4) $(arg rcS)' />
     <node name='bogey_model' pkg='gazebo_ros' type='spawn_model' output='screen'
       args='-sdf -file $(arg sdf) -model $(arg name) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)'>
     </node>

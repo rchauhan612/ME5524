@@ -7,5 +7,6 @@
 *.bak
 *.swp
 
+/src/offboard_control
 /src/px4_firmware
 /src/sitl_gazebo

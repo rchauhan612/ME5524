@@ -1,2 +1,3 @@
+- git: { local-name: offboard_control, uri: 'https://github.com/mickey13/offboard-control.git', version: master }
 - git: { local-name: px4_firmware, uri: 'https://github.com/PX4/Firmware.git', version: master }
 - git: { local-name: sitl_gazebo, uri: 'https://github.com/PX4/sitl_gazebo.git', version: master }
