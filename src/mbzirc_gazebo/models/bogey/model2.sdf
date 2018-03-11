@@ -397,11 +397,11 @@
         <always_on>1</always_on>
         <update_rate>10</update_rate>
         <visualize>false</visualize>
-        <!-- how to make this work without using urdf?
+        <!-- how to make this work without using urdf? -->
         <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
           <alwaysOn>true</alwaysOn>
           <updateRate>0.0</updateRate>
-          <cameraName>cgo3_camera</cameraName>
+          <cameraName>camera/perspective</cameraName>
           <imageTopicName>image_raw</imageTopicName>
           <cameraInfoTopicName>camera_info</cameraInfoTopicName>
           <frameName>cgo3_camera_optical_frame</frameName>
@@ -412,7 +412,6 @@
           <distortionT1>0.0</distortionT1>
           <distortionT2>0.0</distortionT2>
         </plugin>
-        -->
         <!-- GStreamer camera plugin (needs a lot of CPU! Consider lowering the
              camera image size) -->
         <!-- <plugin name='GstCameraPlugin' filename='libgazebo_gst_camera_plugin.so'>
