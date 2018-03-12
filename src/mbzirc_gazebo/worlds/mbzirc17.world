@@ -47,9 +47,9 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <include name='kentland'>
+    <include name='mbzirc17'>
       <pose>0 0 0 0 0 0</pose>
-      <uri>file://models/kentland</uri>
+      <uri>file://models/mbzirc17</uri>
       <static>1</static>
     </include>
   </world>

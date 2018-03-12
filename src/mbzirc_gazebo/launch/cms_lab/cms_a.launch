@@ -1,7 +1,7 @@
 <?xml version='1.0' ?>
 <launch>
   <arg name='physics' default='ode' />
-  <arg name='world' default='$(find mbzirc_gazebo)/worlds/kentland.world' />
+  <arg name='world' default='$(find mbzirc_gazebo)/worlds/mbzirc17.world' />
 
   <node name='gazebo' pkg='gazebo_ros' type='gzserver' respawn='false' output='screen' args='--verbose -e $(arg physics) $(arg world)' />
   <node name='gazebo_gui' pkg='gazebo_ros' type='gzclient' respawn='false' output='screen' />
