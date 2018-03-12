@@ -8,16 +8,4 @@
     <arg name='fcu_url' value='$(arg fcu_url)' />
     <arg name='gcs_url' value='$(arg gcs_url)' />
   </include>
-
-  <!-- Launch UAV demo - REMOVE LATER -->
-  <group ns='bogey4'>
-    <include file='$(find control)/launch/uav_demo.launch'>
-      <arg name='x_min' value='-15.0' />
-      <arg name='x_max' value='15.0' />
-      <arg name='y_min' value='-30.0' />
-      <arg name='y_max' value='-10.0' />
-      <arg name='z_min' value='9.0' />
-      <arg name='z_max' value='10.0' />
-    </include>
-  </group>
 </launch>
