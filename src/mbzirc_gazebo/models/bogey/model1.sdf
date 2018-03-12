@@ -396,7 +396,7 @@
         </camera>
         <always_on>1</always_on>
         <update_rate>10</update_rate>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <!-- how to make this work without using urdf? -->
         <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
           <alwaysOn>true</alwaysOn>
@@ -1182,7 +1182,7 @@
         </camera>
         <always_on>1</always_on>
         <update_rate>10</update_rate>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <!-- how to make this work without using urdf? -->
         <plugin name='fisheye_camera_controller' filename='libgazebo_ros_camera.so'>
           <alwaysOn>true</alwaysOn>
