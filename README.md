@@ -14,7 +14,7 @@ Here are some common workspace commands for updating and running the simulation 
 
 ### Run Simulation
 
-    roslaunch mbzirc_gazebo challenge1.launch
+    roslaunch mbzirc_gazebo challenge1_simulator.launch
 
 ### Run System
 
