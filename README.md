@@ -51,7 +51,7 @@ Add this to your .bashrc file. **Note CATKIN_WS should be set to where you have 
     sudo apt install ros-lunar-mavros ros-lunar-mavros-extras ros-lunar-mavros-msgs
     sudo apt install protobuf-compiler python-pip python-numpy python-toml python-jinja2
     sudo geographiclib-get-geoids all
-
+    sudo apt-get install python-catkin-tools
 ## Control Reference
 
 ### Takeoff
