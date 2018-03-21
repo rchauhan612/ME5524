@@ -18,6 +18,12 @@ Here are some common workspace commands for updating and running the simulation 
 
 ### Run System
 
+#### Simulation
+
+    roslaunch mbzirc_gazebo challenge1_system.launch
+
+#### Hardware
+
     roslaunch mbzirc_system bogey0.launch
 
 ## Installation Instructions
